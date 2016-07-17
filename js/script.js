@@ -28,7 +28,7 @@
       cursorcolor:"#11abb0", // Set cursor color
       cursorwidth: "8", // Sety cursor width
       cursorborder: "", // Set cursor border color, default left none
-      // autohidemode: false
+      autohidemode: false// autohidemode: false
     });
 
 
@@ -72,12 +72,24 @@ $(window).scroll(function(e){
   parallax();
 });
 
-
 function parallax() {
   var scrollPosition = $(window).scrollTop();
   $('.banner').css('margin-top', (0 - (scrollPosition * .8)) + 'px');
 }
 
+/*----------------------------------------------------*/
+/* Custom Parallax By Matthew Childs
+------------------------------------------------------*/
+$(document).ready(function(){
+  $("#trophy").css("top",""+Math.max($("#skillsText").offset().top-$(window).scrollTop(),0)+"px");
+  $("#degree").css("top",""+Math.max($("#educationText").offset().top-$(window).scrollTop(),20)+"px");
+  $("#employment").css("top",""+Math.max($("#employmentText").offset().top-$(window).scrollTop(),20)+"px");
+});
+$(window).scroll(function() {
+  $("#trophy").css("top",""+Math.max($("#skillsText").offset().top-$(window).scrollTop(),0)+"px");
+  $("#degree").css("top",""+Math.max($("#educationText").offset().top-$(window).scrollTop(),20)+"px");
+  $("#employment").css("top",""+Math.max($("#employmentText").offset().top-$(window).scrollTop(),20)+"px");
+});
 /*----------------------------------------------------*/
 /* Highlight the current section in the navigation bar
 ------------------------------------------------------*/

@@ -194,7 +194,7 @@ var GMaps = (function(global) {
           streetViewControl: streetViewControl,
           overviewMapControl: overviewMapControl
         };
-                console.log(options.lat);
+
 
     if (typeof(options.el) === 'string' || typeof(options.div) === 'string') {
       this.el = getElementById(container_id, options.context);

@@ -9,11 +9,12 @@
    3. Header Styles
    4. About Section
    5. Resume Section
-   6. Portfolio Section
-   7. Call To Action Section
-   8. Testimonials Section
-   9. Contact Section
-   10. Footer
+   6. Skills Section
+   7. Portfolio Section
+   8. Call To Action Section
+   9. Testimonials Section
+   10. Contact Section
+   11. Footer
 
 ===================================================================== */
 
@@ -135,7 +136,7 @@ header {
    height: 800px;
    min-height: 500px;
    width: 100%;
-   background: #161415 url(../images/bg.jpg) no-repeat top center;
+   background: #161415 url(../images/bg.jpg) no-repeat top right;
    background-size: cover !important;
 	-webkit-background-size: cover !important;
    text-align: center;
@@ -165,7 +166,8 @@ header .banner-text h1 {
    font-family: 'Raleway', sans-serif;
    color: #fff;
    letter-spacing: 2px;
-   margin: 0 auto 40px;
+   width: 80%;
+   margin: 0 auto 40px 0;
 }
 
 header .banner-text h1 span {
@@ -178,7 +180,7 @@ header .banner-text h3 {
    font-family: 'Raleway', sans-serif;
    color: #FEFEFE;
    margin: 0 auto;
-   width: 70%;
+   width: 60%;
 }
 header .banner-text h3 span,
 header .banner-text h3 a {
@@ -193,7 +195,7 @@ header .banner-text hr {
 }
 
 .header-overlay {  
-  background: #161415 url(../images/bg-blur.jpg) no-repeat top center;     
+  background: #161415 url(../images/bg-blur.jpg) no-repeat top right;     
   background-size:  cover!important;
   position: absolute;
   top: 0;
@@ -204,6 +206,11 @@ header .banner-text hr {
   height: 100%;
   z-index: 0;
   opacity: 0;
+}
+
+header p a i {
+/*  position: relative;
+  left: 8rem;*/
 }
 
 /* social links */
@@ -639,11 +646,21 @@ body.show-menu #left-nav {
   z-index: 10;
 }
 
-
-
 /* ------------------------------------------------------------------ */
 /* 5. Resume Section
 /* ------------------------------------------------------------------ */
+
+#employment {
+  position: relative;
+  top: 2rem;
+  height: 50%;
+  width: 50%;
+}
+
+#degree {
+  position: relative;
+  top: 2rem;
+}
 
 #resume {
   background: #fff;
@@ -833,6 +850,88 @@ body.show-menu #left-nav {
 
 }
 
+/* ------------------------------------------------------------------ */
+/* 6. Skills Section
+/* ------------------------------------------------------------------ */
+#skills {
+  background: #fff;
+  overflow: hidden;
+  padding-bottom: 72px;
+  padding-top: 90px;
+}
+
+#skills a, #skills a:visited  { color: #11ABB0; }
+#skills a:hover, #skills a:focus { color: #313131; }
+
+#skills h1 {
+  color: #666;
+  margin-bottom: 60px;
+  letter-spacing: 1px;
+  border-color: #11abb0;
+  width: 400px;
+}
+#skills h1:hover {
+  border-color:  #ed5565;
+}
+
+#skills h2 {
+  font: 700 18px/24px "Open Sans",sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+#skills h2 span {
+   border-bottom: 3px solid #11ABB0;
+   padding-bottom: 6px;
+}
+#skills h3 {
+   font: 25px/30px 'Open Sans', sans-serif;
+   font-weight: 700;
+   text-transform: uppercase;
+   color: #666;
+}
+
+#skills .section-title:after {
+  background: #fff;
+  color: #666;
+  content: "\f02d";
+}
+
+
+#skills .header-col { padding-top: 9px; }
+#skills .main-col { padding-right: 10%; }
+
+.education, .work, .skill, awards {
+   margin-bottom: 48px;
+   padding-bottom: 24px;
+   border-bottom: 1px solid #E8E8E8;
+}
+#skills .info {
+   font: 16px/24px 'Raleway', serif;
+   font-style: italic;
+   color: #6E7881;
+   margin-bottom: 18px;
+   margin-top: 9px;
+}
+#skills .info span {
+   margin-right: 5px;
+   margin-left: 5px;
+}
+#skills .date {
+   font: 15px/24px 'opensans-regular', sans-serif;
+   margin-top: 6px;
+}
+
+
+
+
+#trophy {
+  height: 75%;
+  width: 75%;
+  position: relative;
+  left: -4.90rem;
+}
+
 /*----------------------------------------------*/
 /*	Skill Bars
 /*----------------------------------------------*/
@@ -964,7 +1063,7 @@ body.show-menu #left-nav {
 }
 
 /* ------------------------------------------------------------------ */
-/* 6. Portfolio Section
+/* 7. Portfolio Section
 /* ------------------------------------------------------------------ */
 
 #portfolio {
@@ -1161,7 +1260,7 @@ body.show-menu #left-nav {
 
 
 /* ------------------------------------------------------------------ */
-/* 7. Call To Action Section
+/* 8. Call To Action Section
 /* ------------------------------------------------------------------ */
 
 #call-to-action {
@@ -1211,7 +1310,7 @@ body.show-menu #left-nav {
 
 
 /* ------------------------------------------------------------------
-/* 8. Testimonials
+/* 9. Testimonials
 /* ------------------------------------------------------------------ */
 
 #testimonials {
@@ -1279,7 +1378,7 @@ body.show-menu #left-nav {
 
 
 /* ------------------------------------------------------------------ */
-/* 9. Contact Section
+/* 10. Contact Section
 /* ------------------------------------------------------------------ */
 
 #contact {
@@ -1461,7 +1560,7 @@ body.show-menu #left-nav {
 
 
 /* ------------------------------------------------------------------ */
-/* 10. Footer
+/* 11. Footer
 /* ------------------------------------------------------------------ */
 
 footer {
