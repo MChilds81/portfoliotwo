@@ -877,6 +877,10 @@ body.show-menu #left-nav {
   border-color:  #ed5565;
 }
 
+#skillsText {
+  text-align: center;
+}
+
 #skills h2 {
   font: 700 18px/24px "Open Sans",sans-serif;
   letter-spacing: 1px;
@@ -932,7 +936,7 @@ body.show-menu #left-nav {
   height: 75%;
   width: 75%;
   position: relative;
-  left: -4.90rem;
+  left: 12%;
 }
 
 /*----------------------------------------------*/
