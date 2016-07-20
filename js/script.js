@@ -81,14 +81,14 @@ function parallax() {
 /* Custom Parallax By Matthew Childs
 ------------------------------------------------------*/
 $(document).ready(function(){
-  $("#trophy").css("top",""+Math.max($("#skillsText").offset().top-$(window).scrollTop(),0)+"px");
-  $("#degree").css("top",""+Math.max($("#educationText").offset().top-$(window).scrollTop(),20)+"px");
-  $("#employment").css("top",""+Math.max($("#employmentText").offset().top-$(window).scrollTop(),20)+"px");
+  $("#trophy").css("top",""+Math.max($("#skillsText").offset().top-$(window).scrollTop()-100,0)+"px");
+  $("#degree").css("top",""+Math.max($("#educationText").offset().top-$(window).scrollTop()-250,20)+"px");
+  $("#employment").css("top",""+Math.max($("#employmentText").offset().top-$(window).scrollTop()-100,20)+"px");
 });
 $(window).scroll(function() {
-  $("#trophy").css("top",""+Math.max($("#skillsText").offset().top-$(window).scrollTop(),0)+"px");
-  $("#degree").css("top",""+Math.max($("#educationText").offset().top-$(window).scrollTop(),20)+"px");
-  $("#employment").css("top",""+Math.max($("#employmentText").offset().top-$(window).scrollTop(),20)+"px");
+  $("#trophy").css("top",""+Math.max($("#skillsText").offset().top-$(window).scrollTop()-100,0)+"px");
+  $("#degree").css("top",""+Math.max($("#educationText").offset().top-$(window).scrollTop()-250,20)+"px");
+  $("#employment").css("top",""+Math.max($("#employmentText").offset().top-$(window).scrollTop()-100,20)+"px");
 });
 /*----------------------------------------------------*/
 /* Highlight the current section in the navigation bar

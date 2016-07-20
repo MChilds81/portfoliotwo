@@ -660,6 +660,9 @@ body.show-menu #left-nav {
 #degree {
   position: relative;
   top: 2rem;
+  left: -2rem;
+  height: 75%;
+  width: 75%;
 }
 
 #resume {
